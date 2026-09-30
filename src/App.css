@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f6;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background-color: #e91e63;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+main > h2 {
+  text-align: center;
+  color: #c2185b;
+  margin-bottom: 20px;
+}
+
+/* Form */
+
+.form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #f8bbd0;
+  margin-bottom: 25px;
+}
+
+.form h2 {
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.form input,
+.form select,
+.filters input,
+.filters select {
+  width: 100%;
+  padding: 12px;
+  margin: 7px 0;
+  border: 1px solid #f48fb1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 18px;
+  margin: 8px 5px 8px 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #ec407a;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+/* Search */
+
+.filters {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+/* Employee Cards */
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.employee-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #f8bbd0;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.15);
+}
+
+.employee-card h2 {
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+.employee-card p {
+  margin: 8px 0;
+  color: #555;
+  line-height: 1.4;
+}
+
+.actions {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 0 0 15px 15px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #ad1457;
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .employee-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .employee-list {
+    grid-template-columns: 1fr;
+  }
+}
